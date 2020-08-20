@@ -23,20 +23,20 @@
     font-weight: map-get($map: $font-weight, $key: medium);
 
 # Partials
-    Partial file name always starts from _
-    You import a partials like this
+    Partial file name always starts from _ <br>
+    You import a partials like this <br>
 
     @import './variables';
 
 
 # Functions
 
-//Here is the Function
+Here is the Function<br>
 @function weight($weight-name){
     @return $weight-name;
 }
 
-You can call it like this
+You can call it like this<br>
 
 .main p {
   color: red;
@@ -50,7 +50,7 @@ You can call it like this
     align-items: center;
 }
 
-//Call it Like this
+//Call it Like  <br>
 
 .main{
     @include flexCenter; --> here
