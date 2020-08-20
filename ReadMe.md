@@ -2,6 +2,7 @@
 # Configure from setting by chnaging "savePath": "/dist/css"
 
 # Nesting
+``` css
     .main{
         width: 80%;
         margin: 0 auto;
@@ -17,41 +18,46 @@
             }
         }
     }
-
+```
 
 # Map
+```css
     font-weight: map-get($map: $font-weight, $key: medium);
-
+```
 # Partials
-    Partial file name always starts from _ <br>
-    You import a partials like this <br>
-
+    <!-- Partial file name always starts from _ <br>
+    You import a partials like this <br> -->
+```css
     @import './variables';
-
+```
 
 # Functions
 
-Here is the Function<br>
+<!-- Here is the Function<br> -->
+```css
 @function weight($weight-name){
     @return $weight-name;
 }
+```
 
-You can call it like this<br>
-
+<!-- You can call it like this<br> -->
+```css
 .main p {
   color: red;
   font-weight: bold; -->   Here
   }
-
+```
 # Mixin
+```css
 @mixin flexCenter() {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-//Call it Like  <br>
-
+```
+<!-- Call it Like  <br> -->
+```css
 .main{
     @include flexCenter; --> here
     width: 80%;
@@ -68,5 +74,5 @@ You can call it like this<br>
         }
     }
 }
-
+```
 
