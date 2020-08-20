@@ -75,4 +75,20 @@
     }
 }
 ```
+<!-- Another waay to use mixen with if statement -->
+```css
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: $primary-color;
+        color: $text-color;
+    }
+}
+```
 
+<!--You can call it out like this -->
+
+```css
+.light {
+    @include theme ($light-theme: true);
+}
+```

@@ -29,4 +29,9 @@ body {
 .main .main_paragraph:hover {
   color: purple;
 }
+
+.light {
+  background: #fff;
+  color: red;
+}
 /*# sourceMappingURL=main.css.map */

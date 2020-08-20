@@ -10,6 +10,13 @@
     justify-content: center;
     align-items: center;
 }
+//Another mixin
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: $primary-color;
+        color: $text-color;
+    }
+}
 body{
     background: $bodybg;
     //font-weight: map-get($map: $font-weight, $key: bold);
@@ -30,4 +37,8 @@ body{
             color: purple;
         }
     }
+}
+
+.light {
+    @include theme ($light-theme: true);
 }
